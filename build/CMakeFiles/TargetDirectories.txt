@@ -1,0 +1,1 @@
+/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir

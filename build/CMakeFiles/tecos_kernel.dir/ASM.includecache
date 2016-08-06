@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/bootstrap.S
+
+/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/time.S
+

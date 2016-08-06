@@ -1,0 +1,10 @@
+#ifndef __ARCH_H__
+#define __ARCH_H__
+
+#include "arch/${${PROJECT_NAME}_architecture}/framebuffer.h"
+#include "arch/${${PROJECT_NAME}_architecture}/memory.h"
+#include "arch/${${PROJECT_NAME}_architecture}/io.h"
+#include "arch/${${PROJECT_NAME}_architecture}/time.h"
+#include "arch/${${PROJECT_NAME}_architecture}/serial.h"
+
+#endif

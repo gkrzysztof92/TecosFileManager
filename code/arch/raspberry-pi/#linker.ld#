@@ -1,0 +1,23 @@
+ENTRY(tecos_entry_point)
+
+MEMORY
+{
+  RAM(rwx): ORIGIN = 0x8000, LENGTH = 64M
+}
+
+SECTIONS
+{
+/*
+* Zawiera Kod programu
+*/
+  .text : {
+     KEEP(*(.tecos_bootstrap))
+     *(.text)
+  } > RAM
+
+  .data : {
+    *(.data)
+  } > RAM
+
+  stack = ORIGIN(RAM) + LENGTH(RAM);
+}

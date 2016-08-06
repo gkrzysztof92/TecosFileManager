@@ -1,0 +1,5 @@
+#!/bin/bash
+
+clear
+
+qemu-system-arm -kernel ./build/${PROJECT_NAME}-${${PROJECT_NAME}_version}.img -initrd ./build/${PROJECT_NAME}-${${PROJECT_NAME}_version}.img -m 128 -M raspi -serial stdio
