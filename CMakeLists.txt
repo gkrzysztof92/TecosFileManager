@@ -56,6 +56,8 @@ set(CXX_SOURCE_FILES ${PROJECT_SOURCE_DIR}/code/kernel_main.cc
 			${PROJECT_SOURCE_DIR}/code/TecosFileManager.cpp
 			${PROJECT_SOURCE_DIR}/code/TecosFileManager.h
 			${PROJECT_SOURCE_DIR}/code/utils/LocalDataTimeStub.h
+			${PROJECT_SOURCE_DIR}/code/utils/md5.h
+			${PROJECT_SOURCE_DIR}/code/utils/md5.cpp
 )
 
 #Tworzony będzie wykonywalny plik binarny

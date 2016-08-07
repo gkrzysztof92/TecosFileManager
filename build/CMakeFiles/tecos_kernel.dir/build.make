@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krzysiek/TecosFileManager
+CMAKE_SOURCE_DIR = /home/krzysiek/Dobry_projekt/TecosFileManager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krzysiek/TecosFileManager/build
+CMAKE_BINARY_DIR = /home/krzysiek/Dobry_projekt/TecosFileManager/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tecos_kernel.dir/depend.make
@@ -51,9 +51,9 @@ include CMakeFiles/tecos_kernel.dir/flags.make
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj: ../code/arch/raspberry-pi/bootstrap.S
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building ASM object CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj"
-	/usr/bin/arm-none-eabi-gcc  $(ASM_DEFINES) $(ASM_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj -c /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/bootstrap.S
+	/usr/bin/arm-none-eabi-gcc  $(ASM_DEFINES) $(ASM_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/bootstrap.S
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj.requires
@@ -66,9 +66,9 @@ CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/bootstrap.S.obj.provides.buil
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj: ../code/arch/raspberry-pi/time.S
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building ASM object CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj"
-	/usr/bin/arm-none-eabi-gcc  $(ASM_DEFINES) $(ASM_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj -c /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.S
+	/usr/bin/arm-none-eabi-gcc  $(ASM_DEFINES) $(ASM_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/time.S
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj.requires
@@ -81,17 +81,17 @@ CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.S.obj.provides.build: CM
 
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj: ../code/kernel_main.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj -c /home/krzysiek/TecosFileManager/code/kernel_main.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/kernel_main.cc
 
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/kernel_main.cc > CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/kernel_main.cc > CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/kernel_main.cc -o CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/kernel_main.cc -o CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj.requires
@@ -104,17 +104,17 @@ CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj.provides.build: CMakeFiles/t
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj: ../code/arch/raspberry-pi/io.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj -c /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/io.cc
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/io.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/io.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj.requires
@@ -127,17 +127,17 @@ CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj.provides.build: CMa
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj: ../code/arch/raspberry-pi/memory.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj -c /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/memory.cc
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/memory.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/memory.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj.requires
@@ -150,17 +150,17 @@ CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj.provides.build:
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj: ../code/arch/raspberry-pi/time.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj -c /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/time.cc
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/time.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/time.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj.requires
@@ -173,17 +173,17 @@ CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj.provides.build: C
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj: ../code/arch/raspberry-pi/serial.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj -c /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/serial.cc
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/serial.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/serial.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj.requires
@@ -196,17 +196,17 @@ CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj.provides.build:
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj: ../code/arch/raspberry-pi/framebuffer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj -c /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/framebuffer.cc
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/framebuffer.cc > CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/arch/raspberry-pi/framebuffer.cc -o CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj.requires
@@ -219,17 +219,17 @@ CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj.provides.b
 
 CMakeFiles/tecos_kernel.dir/code/output.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/output.cc.obj: ../code/output.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/output.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/output.cc.obj -c /home/krzysiek/TecosFileManager/code/output.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/output.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/output.cc
 
 CMakeFiles/tecos_kernel.dir/code/output.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/output.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/output.cc > CMakeFiles/tecos_kernel.dir/code/output.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/output.cc > CMakeFiles/tecos_kernel.dir/code/output.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/output.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/output.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/output.cc -o CMakeFiles/tecos_kernel.dir/code/output.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/output.cc -o CMakeFiles/tecos_kernel.dir/code/output.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/output.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/output.cc.obj.requires
@@ -242,17 +242,17 @@ CMakeFiles/tecos_kernel.dir/code/output.cc.obj.provides.build: CMakeFiles/tecos_
 
 CMakeFiles/tecos_kernel.dir/code/stub.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/stub.cc.obj: ../code/stub.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/stub.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/stub.cc.obj -c /home/krzysiek/TecosFileManager/code/stub.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/stub.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/stub.cc
 
 CMakeFiles/tecos_kernel.dir/code/stub.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/stub.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/stub.cc > CMakeFiles/tecos_kernel.dir/code/stub.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/stub.cc > CMakeFiles/tecos_kernel.dir/code/stub.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/stub.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/stub.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/stub.cc -o CMakeFiles/tecos_kernel.dir/code/stub.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/stub.cc -o CMakeFiles/tecos_kernel.dir/code/stub.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/stub.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/stub.cc.obj.requires
@@ -265,17 +265,17 @@ CMakeFiles/tecos_kernel.dir/code/stub.cc.obj.provides.build: CMakeFiles/tecos_ke
 
 CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj: ../code/utils/cp437-font.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj -c /home/krzysiek/TecosFileManager/code/utils/cp437-font.cc
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/cp437-font.cc
 
 CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/utils/cp437-font.cc > CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/cp437-font.cc > CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.i
 
 CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/utils/cp437-font.cc -o CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/cp437-font.cc -o CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.s
 
 CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj.requires
@@ -288,17 +288,17 @@ CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj.provides.build: CMakeFi
 
 CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj: ../code/utils/CharDrawer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj -c /home/krzysiek/TecosFileManager/code/utils/CharDrawer.cpp
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/CharDrawer.cpp
 
 CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/utils/CharDrawer.cpp > CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/CharDrawer.cpp > CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.i
 
 CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/utils/CharDrawer.cpp -o CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/CharDrawer.cpp -o CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.s
 
 CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj.requires
@@ -311,17 +311,17 @@ CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj.provides.build: CMakeF
 
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj: ../code/utils/UIDrawer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj -c /home/krzysiek/TecosFileManager/code/utils/UIDrawer.cpp
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/UIDrawer.cpp
 
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/utils/UIDrawer.cpp > CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/UIDrawer.cpp > CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.i
 
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/utils/UIDrawer.cpp -o CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/UIDrawer.cpp -o CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.s
 
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj.requires
@@ -334,17 +334,17 @@ CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj.provides.build: CMakeFil
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj: ../code/filesystem/FileSystemItem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj -c /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.cpp
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/FileSystemItem.cpp
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/FileSystemItem.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.i
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/FileSystemItem.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.s
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj.requires
@@ -357,17 +357,17 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj.provides.buil
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj: ../code/filesystem/Directory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj -c /home/krzysiek/TecosFileManager/code/filesystem/Directory.cpp
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/Directory.cpp
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/filesystem/Directory.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/Directory.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.i
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/filesystem/Directory.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/Directory.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.s
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj.requires
@@ -380,17 +380,17 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj.provides.build: CM
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/filesystem/File.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj -c /home/krzysiek/TecosFileManager/code/filesystem/File.cpp
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/File.cpp
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/filesystem/File.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/File.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.i
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/filesystem/File.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/File.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.s
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj.requires
@@ -403,17 +403,17 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj.provides.build: CMakeFi
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/filesystem/FileSystem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj -c /home/krzysiek/TecosFileManager/code/filesystem/FileSystem.cpp
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/FileSystem.cpp
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/filesystem/FileSystem.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/FileSystem.cpp > CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.i
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/filesystem/FileSystem.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/filesystem/FileSystem.cpp -o CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.s
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj.requires
@@ -426,17 +426,17 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj.provides.build: C
 
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj: ../code/TecosFileManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj"
-	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj -c /home/krzysiek/TecosFileManager/code/TecosFileManager.cpp
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/TecosFileManager.cpp
 
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.i"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/TecosFileManager/code/TecosFileManager.cpp > CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.i
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/TecosFileManager.cpp > CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.i
 
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.s"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/TecosFileManager/code/TecosFileManager.cpp -o CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.s
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/TecosFileManager.cpp -o CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.s
 
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj.requires:
 .PHONY : CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj.requires
@@ -446,6 +446,29 @@ CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj.provides: CMakeFiles/t
 .PHONY : CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj.provides
 
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj.provides.build: CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj
+
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj: CMakeFiles/tecos_kernel.dir/flags.make
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj: ../code/utils/md5.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj"
+	/usr/bin/arm-none-eabi-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj -c /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/md5.cpp
+
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.i"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/md5.cpp > CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.i
+
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.s"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/krzysiek/Dobry_projekt/TecosFileManager/code/utils/md5.cpp -o CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.s
+
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.requires:
+.PHONY : CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.requires
+
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.provides: CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.requires
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.provides.build
+.PHONY : CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.provides
+
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.provides.build: CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj
 
 # Object files for target tecos_kernel
 tecos_kernel_OBJECTS = \
@@ -466,7 +489,8 @@ tecos_kernel_OBJECTS = \
 "CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj" \
 "CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj" \
 "CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj" \
-"CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj"
+"CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj" \
+"CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj"
 
 # External object files for target tecos_kernel
 tecos_kernel_EXTERNAL_OBJECTS =
@@ -489,11 +513,12 @@ tecos_kernel-lab06.elf: CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cp
 tecos_kernel-lab06.elf: CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj
 tecos_kernel-lab06.elf: CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj
 tecos_kernel-lab06.elf: CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj
+tecos_kernel-lab06.elf: CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj
 tecos_kernel-lab06.elf: CMakeFiles/tecos_kernel.dir/build.make
 tecos_kernel-lab06.elf: CMakeFiles/tecos_kernel.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable tecos_kernel-lab06.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tecos_kernel.dir/link.txt --verbose=$(VERBOSE)
-	arm-none-eabi-objcopy /home/krzysiek/TecosFileManager/build/tecos_kernel-lab06.elf -O binary /home/krzysiek/TecosFileManager/build/tecos_kernel-lab06.img
+	arm-none-eabi-objcopy /home/krzysiek/Dobry_projekt/TecosFileManager/build/tecos_kernel-lab06.elf -O binary /home/krzysiek/Dobry_projekt/TecosFileManager/build/tecos_kernel-lab06.img
 
 # Rule to build all files generated by this target.
 CMakeFiles/tecos_kernel.dir/build: tecos_kernel-lab06.elf
@@ -517,6 +542,7 @@ CMakeFiles/tecos_kernel.dir/requires: CMakeFiles/tecos_kernel.dir/code/filesyste
 CMakeFiles/tecos_kernel.dir/requires: CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj.requires
 CMakeFiles/tecos_kernel.dir/requires: CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj.requires
 CMakeFiles/tecos_kernel.dir/requires: CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj.requires
+CMakeFiles/tecos_kernel.dir/requires: CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj.requires
 .PHONY : CMakeFiles/tecos_kernel.dir/requires
 
 CMakeFiles/tecos_kernel.dir/clean:
@@ -524,6 +550,6 @@ CMakeFiles/tecos_kernel.dir/clean:
 .PHONY : CMakeFiles/tecos_kernel.dir/clean
 
 CMakeFiles/tecos_kernel.dir/depend:
-	cd /home/krzysiek/TecosFileManager/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krzysiek/TecosFileManager /home/krzysiek/TecosFileManager /home/krzysiek/TecosFileManager/build /home/krzysiek/TecosFileManager/build /home/krzysiek/TecosFileManager/build/CMakeFiles/tecos_kernel.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/krzysiek/Dobry_projekt/TecosFileManager/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/krzysiek/Dobry_projekt/TecosFileManager /home/krzysiek/Dobry_projekt/TecosFileManager /home/krzysiek/Dobry_projekt/TecosFileManager/build /home/krzysiek/Dobry_projekt/TecosFileManager/build /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles/tecos_kernel.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tecos_kernel.dir/depend
 

@@ -4,10 +4,12 @@
 #include <string>
 #include <map>
 #include <vector>
+#include <iostream>
 #include "CharDrawer.h"
 #include "../filesystem/Directory.h"
 #include "../filesystem/FileSystemItem.h"
 #include "../filesystem/File.h"
+#include "md5.h"
 
 
 class UIDrawer

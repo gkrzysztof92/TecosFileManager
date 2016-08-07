@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj"
   "CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj"
   "CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj"
+  "CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj"
   "tecos_kernel-lab06.elf.pdb"
   "tecos_kernel-lab06.elf"
 )

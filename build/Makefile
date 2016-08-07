@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/krzysiek/TecosFileManager
+CMAKE_SOURCE_DIR = /home/krzysiek/Dobry_projekt/TecosFileManager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/krzysiek/TecosFileManager/build
+CMAKE_BINARY_DIR = /home/krzysiek/Dobry_projekt/TecosFileManager/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -73,9 +73,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysiek/TecosFileManager/build/CMakeFiles /home/krzysiek/TecosFileManager/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysiek/TecosFileManager/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysiek/Dobry_projekt/TecosFileManager/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -515,6 +515,30 @@ code/utils/cp437-font.cc.s:
 	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.s
 .PHONY : code/utils/cp437-font.cc.s
 
+code/utils/md5.obj: code/utils/md5.cpp.obj
+.PHONY : code/utils/md5.obj
+
+# target to build an object file
+code/utils/md5.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj
+.PHONY : code/utils/md5.cpp.obj
+
+code/utils/md5.i: code/utils/md5.cpp.i
+.PHONY : code/utils/md5.i
+
+# target to preprocess a source file
+code/utils/md5.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.i
+.PHONY : code/utils/md5.cpp.i
+
+code/utils/md5.s: code/utils/md5.cpp.s
+.PHONY : code/utils/md5.s
+
+# target to generate assembly for a file
+code/utils/md5.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.s
+.PHONY : code/utils/md5.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -574,6 +598,9 @@ help:
 	@echo "... code/utils/cp437-font.obj"
 	@echo "... code/utils/cp437-font.i"
 	@echo "... code/utils/cp437-font.s"
+	@echo "... code/utils/md5.obj"
+	@echo "... code/utils/md5.i"
+	@echo "... code/utils/md5.s"
 .PHONY : help
 
 
