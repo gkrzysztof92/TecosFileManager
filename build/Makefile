@@ -115,6 +115,30 @@ tecos_kernel/fast:
 	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/build
 .PHONY : tecos_kernel/fast
 
+code/TecosFileManager.obj: code/TecosFileManager.cpp.obj
+.PHONY : code/TecosFileManager.obj
+
+# target to build an object file
+code/TecosFileManager.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj
+.PHONY : code/TecosFileManager.cpp.obj
+
+code/TecosFileManager.i: code/TecosFileManager.cpp.i
+.PHONY : code/TecosFileManager.i
+
+# target to preprocess a source file
+code/TecosFileManager.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.i
+.PHONY : code/TecosFileManager.cpp.i
+
+code/TecosFileManager.s: code/TecosFileManager.cpp.s
+.PHONY : code/TecosFileManager.s
+
+# target to generate assembly for a file
+code/TecosFileManager.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.s
+.PHONY : code/TecosFileManager.cpp.s
+
 code/arch/raspberry-pi/bootstrap.obj: code/arch/raspberry-pi/bootstrap.S.obj
 .PHONY : code/arch/raspberry-pi/bootstrap.obj
 
@@ -251,6 +275,102 @@ code/arch/raspberry-pi/time.cc.s:
 	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.s
 .PHONY : code/arch/raspberry-pi/time.cc.s
 
+code/filesystem/Directory.obj: code/filesystem/Directory.cpp.obj
+.PHONY : code/filesystem/Directory.obj
+
+# target to build an object file
+code/filesystem/Directory.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj
+.PHONY : code/filesystem/Directory.cpp.obj
+
+code/filesystem/Directory.i: code/filesystem/Directory.cpp.i
+.PHONY : code/filesystem/Directory.i
+
+# target to preprocess a source file
+code/filesystem/Directory.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.i
+.PHONY : code/filesystem/Directory.cpp.i
+
+code/filesystem/Directory.s: code/filesystem/Directory.cpp.s
+.PHONY : code/filesystem/Directory.s
+
+# target to generate assembly for a file
+code/filesystem/Directory.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.s
+.PHONY : code/filesystem/Directory.cpp.s
+
+code/filesystem/File.obj: code/filesystem/File.cpp.obj
+.PHONY : code/filesystem/File.obj
+
+# target to build an object file
+code/filesystem/File.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj
+.PHONY : code/filesystem/File.cpp.obj
+
+code/filesystem/File.i: code/filesystem/File.cpp.i
+.PHONY : code/filesystem/File.i
+
+# target to preprocess a source file
+code/filesystem/File.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.i
+.PHONY : code/filesystem/File.cpp.i
+
+code/filesystem/File.s: code/filesystem/File.cpp.s
+.PHONY : code/filesystem/File.s
+
+# target to generate assembly for a file
+code/filesystem/File.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.s
+.PHONY : code/filesystem/File.cpp.s
+
+code/filesystem/FileSystem.obj: code/filesystem/FileSystem.cpp.obj
+.PHONY : code/filesystem/FileSystem.obj
+
+# target to build an object file
+code/filesystem/FileSystem.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj
+.PHONY : code/filesystem/FileSystem.cpp.obj
+
+code/filesystem/FileSystem.i: code/filesystem/FileSystem.cpp.i
+.PHONY : code/filesystem/FileSystem.i
+
+# target to preprocess a source file
+code/filesystem/FileSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.i
+.PHONY : code/filesystem/FileSystem.cpp.i
+
+code/filesystem/FileSystem.s: code/filesystem/FileSystem.cpp.s
+.PHONY : code/filesystem/FileSystem.s
+
+# target to generate assembly for a file
+code/filesystem/FileSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.s
+.PHONY : code/filesystem/FileSystem.cpp.s
+
+code/filesystem/FileSystemItem.obj: code/filesystem/FileSystemItem.cpp.obj
+.PHONY : code/filesystem/FileSystemItem.obj
+
+# target to build an object file
+code/filesystem/FileSystemItem.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj
+.PHONY : code/filesystem/FileSystemItem.cpp.obj
+
+code/filesystem/FileSystemItem.i: code/filesystem/FileSystemItem.cpp.i
+.PHONY : code/filesystem/FileSystemItem.i
+
+# target to preprocess a source file
+code/filesystem/FileSystemItem.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.i
+.PHONY : code/filesystem/FileSystemItem.cpp.i
+
+code/filesystem/FileSystemItem.s: code/filesystem/FileSystemItem.cpp.s
+.PHONY : code/filesystem/FileSystemItem.s
+
+# target to generate assembly for a file
+code/filesystem/FileSystemItem.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.s
+.PHONY : code/filesystem/FileSystemItem.cpp.s
+
 code/kernel_main.obj: code/kernel_main.cc.obj
 .PHONY : code/kernel_main.obj
 
@@ -323,6 +443,78 @@ code/stub.cc.s:
 	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/stub.cc.s
 .PHONY : code/stub.cc.s
 
+code/utils/CharDrawer.obj: code/utils/CharDrawer.cpp.obj
+.PHONY : code/utils/CharDrawer.obj
+
+# target to build an object file
+code/utils/CharDrawer.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj
+.PHONY : code/utils/CharDrawer.cpp.obj
+
+code/utils/CharDrawer.i: code/utils/CharDrawer.cpp.i
+.PHONY : code/utils/CharDrawer.i
+
+# target to preprocess a source file
+code/utils/CharDrawer.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.i
+.PHONY : code/utils/CharDrawer.cpp.i
+
+code/utils/CharDrawer.s: code/utils/CharDrawer.cpp.s
+.PHONY : code/utils/CharDrawer.s
+
+# target to generate assembly for a file
+code/utils/CharDrawer.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.s
+.PHONY : code/utils/CharDrawer.cpp.s
+
+code/utils/UIDrawer.obj: code/utils/UIDrawer.cpp.obj
+.PHONY : code/utils/UIDrawer.obj
+
+# target to build an object file
+code/utils/UIDrawer.cpp.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj
+.PHONY : code/utils/UIDrawer.cpp.obj
+
+code/utils/UIDrawer.i: code/utils/UIDrawer.cpp.i
+.PHONY : code/utils/UIDrawer.i
+
+# target to preprocess a source file
+code/utils/UIDrawer.cpp.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.i
+.PHONY : code/utils/UIDrawer.cpp.i
+
+code/utils/UIDrawer.s: code/utils/UIDrawer.cpp.s
+.PHONY : code/utils/UIDrawer.s
+
+# target to generate assembly for a file
+code/utils/UIDrawer.cpp.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.s
+.PHONY : code/utils/UIDrawer.cpp.s
+
+code/utils/cp437-font.obj: code/utils/cp437-font.cc.obj
+.PHONY : code/utils/cp437-font.obj
+
+# target to build an object file
+code/utils/cp437-font.cc.obj:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj
+.PHONY : code/utils/cp437-font.cc.obj
+
+code/utils/cp437-font.i: code/utils/cp437-font.cc.i
+.PHONY : code/utils/cp437-font.i
+
+# target to preprocess a source file
+code/utils/cp437-font.cc.i:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.i
+.PHONY : code/utils/cp437-font.cc.i
+
+code/utils/cp437-font.s: code/utils/cp437-font.cc.s
+.PHONY : code/utils/cp437-font.s
+
+# target to generate assembly for a file
+code/utils/cp437-font.cc.s:
+	$(MAKE) -f CMakeFiles/tecos_kernel.dir/build.make CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.s
+.PHONY : code/utils/cp437-font.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -332,6 +524,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tecos_kernel"
+	@echo "... code/TecosFileManager.obj"
+	@echo "... code/TecosFileManager.i"
+	@echo "... code/TecosFileManager.s"
 	@echo "... code/arch/raspberry-pi/bootstrap.obj"
 	@echo "... code/arch/raspberry-pi/framebuffer.obj"
 	@echo "... code/arch/raspberry-pi/framebuffer.i"
@@ -349,6 +544,18 @@ help:
 	@echo "... code/arch/raspberry-pi/time.obj"
 	@echo "... code/arch/raspberry-pi/time.i"
 	@echo "... code/arch/raspberry-pi/time.s"
+	@echo "... code/filesystem/Directory.obj"
+	@echo "... code/filesystem/Directory.i"
+	@echo "... code/filesystem/Directory.s"
+	@echo "... code/filesystem/File.obj"
+	@echo "... code/filesystem/File.i"
+	@echo "... code/filesystem/File.s"
+	@echo "... code/filesystem/FileSystem.obj"
+	@echo "... code/filesystem/FileSystem.i"
+	@echo "... code/filesystem/FileSystem.s"
+	@echo "... code/filesystem/FileSystemItem.obj"
+	@echo "... code/filesystem/FileSystemItem.i"
+	@echo "... code/filesystem/FileSystemItem.s"
 	@echo "... code/kernel_main.obj"
 	@echo "... code/kernel_main.i"
 	@echo "... code/kernel_main.s"
@@ -358,6 +565,15 @@ help:
 	@echo "... code/stub.obj"
 	@echo "... code/stub.i"
 	@echo "... code/stub.s"
+	@echo "... code/utils/CharDrawer.obj"
+	@echo "... code/utils/CharDrawer.i"
+	@echo "... code/utils/CharDrawer.s"
+	@echo "... code/utils/UIDrawer.obj"
+	@echo "... code/utils/UIDrawer.i"
+	@echo "... code/utils/UIDrawer.s"
+	@echo "... code/utils/cp437-font.obj"
+	@echo "... code/utils/cp437-font.i"
+	@echo "... code/utils/cp437-font.s"
 .PHONY : help
 
 

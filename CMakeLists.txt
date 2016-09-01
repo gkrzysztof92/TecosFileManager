@@ -38,7 +38,24 @@ set(CXX_SOURCE_FILES ${PROJECT_SOURCE_DIR}/code/kernel_main.cc
                         ${PROJECT_SOURCE_DIR}/code/output.h
                         ${PROJECT_SOURCE_DIR}/code/output.cc
                         ${PROJECT_SOURCE_DIR}/code/kernel_main.cc
-                        ${PROJECT_SOURCE_DIR}/code/stub.cc)
+                        ${PROJECT_SOURCE_DIR}/code/stub.cc
+			${PROJECT_SOURCE_DIR}/code/utils/cp437-font.cc
+			${PROJECT_SOURCE_DIR}/code/utils/cp437-font.h
+			${PROJECT_SOURCE_DIR}/code/utils/CharDrawer.cpp
+			${PROJECT_SOURCE_DIR}/code/utils/CharDrawer.h
+			${PROJECT_SOURCE_DIR}/code/utils/UIDrawer.cpp
+			${PROJECT_SOURCE_DIR}/code/utils/UIDrawer.h
+			${PROJECT_SOURCE_DIR}/code/filesystem/FileSystemItem.h
+			${PROJECT_SOURCE_DIR}/code/filesystem/FileSystemItem.cpp
+			${PROJECT_SOURCE_DIR}/code/filesystem/Directory.h
+			${PROJECT_SOURCE_DIR}/code/filesystem/Directory.cpp
+			${PROJECT_SOURCE_DIR}/code/filesystem/File.h
+			${PROJECT_SOURCE_DIR}/code/filesystem/File.cpp
+			${PROJECT_SOURCE_DIR}/code/filesystem/FileSystem.h
+			${PROJECT_SOURCE_DIR}/code/filesystem/FileSystem.cpp
+			${PROJECT_SOURCE_DIR}/code/TecosFileManager.cpp
+			${PROJECT_SOURCE_DIR}/code/TecosFileManager.h
+)
 
 #Tworzony będzie wykonywalny plik binarny
 

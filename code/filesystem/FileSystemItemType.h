@@ -1,0 +1,10 @@
+#ifndef FILESYSTEMITEMTYPE_H
+#define FILESYSTEMITEMTYPE_H
+
+namespace TECOS {
+
+
+
+}
+
+#endif // FILESYSTEMITEMTYPE_H

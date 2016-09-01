@@ -10,14 +10,22 @@ set(CMAKE_DEPENDS_CHECK_ASM
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/krzysiek/Tecos_Działa!/code/TecosFileManager.cpp" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj"
   "/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/framebuffer.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj"
   "/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/io.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/io.cc.obj"
   "/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/memory.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/memory.cc.obj"
   "/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/serial.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/serial.cc.obj"
   "/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/time.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/time.cc.obj"
+  "/home/krzysiek/Tecos_Działa!/code/filesystem/Directory.cpp" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj"
+  "/home/krzysiek/Tecos_Działa!/code/filesystem/File.cpp" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj"
+  "/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystem.cpp" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj"
+  "/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystemItem.cpp" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj"
   "/home/krzysiek/Tecos_Działa!/code/kernel_main.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj"
   "/home/krzysiek/Tecos_Działa!/code/output.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/output.cc.obj"
   "/home/krzysiek/Tecos_Działa!/code/stub.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/stub.cc.obj"
+  "/home/krzysiek/Tecos_Działa!/code/utils/CharDrawer.cpp" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/utils/CharDrawer.cpp.obj"
+  "/home/krzysiek/Tecos_Działa!/code/utils/UIDrawer.cpp" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj"
+  "/home/krzysiek/Tecos_Działa!/code/utils/cp437-font.cc" "/home/krzysiek/Tecos_Działa!/build/CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

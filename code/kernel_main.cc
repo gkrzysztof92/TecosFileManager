@@ -1,5 +1,10 @@
 #include "arch.h"
 #include "output.h"
+#include <string>
+#include "utils/CharDrawer.h"
+#include "utils/UIDrawer.h"
+#include "filesystem/FileSystem.h"
+#include "TecosFileManager.h"
 
 extern uint8_t end;
 extern uint8_t stack;
@@ -13,22 +18,20 @@ void kernel_main()
     std::cout << "Adres konca stosu: 0x" << std::hex << reinterpret_cast<uintptr_t>(&stack) << TECOS::endl;
 
     TECOS::FRAMEBUFFER frame_buffer(800,600);
+	TECOS::CharDrawer* charDrawer = new TECOS::CharDrawer();
+	charDrawer->setFrameBuffer(&frame_buffer);
+	UIDrawer* uiDrawer = new UIDrawer();
+	uiDrawer->setCharDrawer(charDrawer);
+    FileSystem * fs = new FileSystem();
+    TECOS::UART * uart = new TECOS::UART;
 
-    for (uint32_t x=0; x <800; x++)
-    {
-        for (uint32_t y=0; y <600; y++)
-        {
-            frame_buffer.SetPixel(x, y, TECOS::RGBToColor(0, x^y % 0xFF, 0,0xFF));
-        }
-    }
+    TecosFileManager* fileManager = new TecosFileManager(fs, uiDrawer, uart);
+    fileManager->run();
 
-    //fram_buffer.SetPixel(100, 100, TECOS::RGBToColor(0xFF,0,0,0xFF));
-
-
-    while(true)
+    /*while(true)
     {
         //TECOS::TIME::DelayS(1);
 
        //std::cout<< "I'm alive!" << TECOS::endl;
-    }
+    }*/
 }
