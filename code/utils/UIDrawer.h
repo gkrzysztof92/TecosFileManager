@@ -38,6 +38,7 @@ class UIDrawer
 
         const int RightLeftMargin = 10;
 
+        const int alertLine = 34;
         const int textInputLine = 35;
         const int commandBarLine = 36;
 
@@ -51,12 +52,13 @@ class UIDrawer
         void drawFileInfo(File * file);
         void drawDirectoryInfo(Directory * directory);
         void clearDirectoryContent();
+        void showAlert(std::string message);
+        void drawTextInput(std::string text);
     protected:
 
     private:
         TECOS::CharDrawer *charDrawer;
         void drawMainWindow();
-        void drawTextInput();
         void drawCommandBar();
 };
 

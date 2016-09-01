@@ -26,18 +26,6 @@ utils/UIDrawer.h
 arch/raspberry-pi/serial.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
 
-/home/krzysiek/TecosFileManager/code/arch.h
-arch/raspberry-pi/framebuffer.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
-arch/raspberry-pi/memory.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
-arch/raspberry-pi/io.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
-arch/raspberry-pi/time.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
-arch/raspberry-pi/serial.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
-
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
 cstdint
 -
@@ -106,28 +94,6 @@ vector
 string
 -
 
-/home/krzysiek/TecosFileManager/code/kernel_main.cc
-arch.h
-/home/krzysiek/TecosFileManager/code/arch.h
-output.h
-/home/krzysiek/TecosFileManager/code/output.h
-string
--
-utils/CharDrawer.h
-/home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
-utils/UIDrawer.h
-/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
-filesystem/FileSystem.h
-/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
-TecosFileManager.h
-/home/krzysiek/TecosFileManager/code/TecosFileManager.h
-
-/home/krzysiek/TecosFileManager/code/output.h
-iostream
--
-arch.h
-/home/krzysiek/TecosFileManager/code/arch.h
-
 /home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
 string
 -
@@ -135,10 +101,6 @@ string
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
 cp437-font.h
 /home/krzysiek/TecosFileManager/code/utils/cp437-font.h
-
-/home/krzysiek/TecosFileManager/code/utils/UIDrawer.cpp
-UIDrawer.h
-/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
 
 /home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
 string

@@ -18,7 +18,7 @@ class TecosFileManager
         const uint8_t UP = 13;
         const uint8_t DOWN = 40;
         const uint8_t ENTER = 13;
-        const uint8_t NEW_FILE_COMMAND = 31;
+        const uint8_t NEW_FILE_COMMAND = 49;
         const uint8_t NEW_DIR_COMMAND = 32;
         const uint8_t EDIT_NAME_COMMAND = 33;
         const uint8_t DELETE_COMMAND = 34;
@@ -35,6 +35,7 @@ class TecosFileManager
         void deleteFileSystemItem(int position);
         void editFileContent(int position);
         std::string getKeyFileSystemItem(int position);
+        std::string getTextInput(int limit);
         virtual ~TecosFileManager();
 
         void run();

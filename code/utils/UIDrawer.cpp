@@ -84,8 +84,11 @@ void UIDrawer::drawMainWindow() {
 
 }
 
-void UIDrawer::drawTextInput() {
-    std::string inputLabel = "[root@root]$ ";
+void UIDrawer::drawTextInput(std::string text) {
+    for (int j = 10; j < 800; j+= 7) {
+        charDrawer->drawChar(219, textInputLine, j, 0, 0, 0);
+    }
+    std::string inputLabel = "[root@root]$ " + text;
     charDrawer->drawLine(inputLabel, textInputLine, 10);
 }
 
@@ -97,7 +100,7 @@ void UIDrawer::drawCommandBar() {
 void UIDrawer::drawUI() {
 
     drawMainWindow();
-    drawTextInput();
+    drawTextInput(" ");
     drawCommandBar();
 }
 
@@ -143,5 +146,14 @@ void UIDrawer::drawFileInfo(File * file) {
 
 void UIDrawer::drawDirectoryInfo(Directory * directory) {
 
+}
+
+void UIDrawer::showAlert(std::string message) {
+
+
+    for (int j = 10; j < 800; j+= 7) {
+        charDrawer->drawChar(219, alertLine, j, 0, 0, 0);
+    }
+    charDrawer->drawLine(message, alertLine, 10, 255, 255, 0);
 }
 
