@@ -26,11 +26,11 @@ class UIDrawer
 
         const int layoutFirstLinePos = 1;
         const int layoutSecondLinePos = 3;
-        const int layoutLastLinePos = 31;
+        const int layoutLastLinePos = 33;
 
         const int labelsLinePos = 5;
         const int separatorLineStart = 4;
-        const int separatorLineEnd = 34;
+        const int separatorLineEnd = 31;
         const int nameSizeSeparatorPos = 270;
         const int sizeDateSeparatorPos = 360;
         const int dateModSeparatorPos = 470;

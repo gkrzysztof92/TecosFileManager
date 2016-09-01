@@ -1,4 +1,4 @@
-# Install script for directory: /home/krzysiek/Tecos_Działa!
+# Install script for directory: /home/krzysiek/TecosFileManager
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/krzysiek/Tecos_Działa!/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/krzysiek/TecosFileManager/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/krzysiek/Tecos_Działa!/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/krzysiek/TecosFileManager/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

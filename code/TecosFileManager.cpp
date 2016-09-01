@@ -20,6 +20,7 @@ void TecosFileManager::run() {
 
     std::map<std::string, FileSystemItem*>::size_type maxPosition =
             fileSystem->directory->directoryContent.size();
+    this->maxCursorPosition = static_cast<int>(maxPosition);
     std::cout<< "MAX POS: " << maxPosition << std::endl;
     int dataIn = 0;
     int counter = 0;
@@ -30,7 +31,7 @@ void TecosFileManager::run() {
         counter++;
 
         //UP ARRW
-        if (dataIn == 183 && counter == 3 && counter > 0) {
+        if (dataIn == 183 && counter == 3 && cursorPosition > 0) {
             cursorPosition--;
             uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
             std::cout << cursorPosition << std::endl;
@@ -38,7 +39,7 @@ void TecosFileManager::run() {
         }
 
         // DOWN ARROW
-        if (dataIn == 184 && counter == 3 && counter <= maxPosition) {
+        if (dataIn == 184 && counter == 3 && cursorPosition < maxCursorPosition) {
             cursorPosition++;
             std::cout << cursorPosition << std::endl;
             uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
@@ -65,7 +66,10 @@ void TecosFileManager::run() {
 void TecosFileManager::enterToDirectory(int position) {
 
     if(position == 0) {
-        fileSystem->directory = (Directory*) fileSystem->directory->parentFileSystemItem;
+        if(fileSystem->directory->parentFileSystemItem != nullptr) {
+            fileSystem->directory =
+            (Directory*) fileSystem->directory->parentFileSystemItem;
+            }
     } else {
         std::string key = getKeyFileSystemItem(position);
         fileSystem->directory = (Directory*)fileSystem->directory->directoryContent.at(key);
@@ -75,7 +79,7 @@ void TecosFileManager::enterToDirectory(int position) {
     std::map<std::string, FileSystemItem*>::size_type maxPosition =
             fileSystem->directory->directoryContent.size();
     cursorPosition = 0;
-    maxCursorPosition = static_cast<int>(maxPosition);
+    this->maxCursorPosition = static_cast<int>(maxPosition);
     std::cout<< "new max pos: " << maxCursorPosition << std::endl;
     uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
 }

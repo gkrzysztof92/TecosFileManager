@@ -25,7 +25,7 @@ class TecosFileManager
         const uint8_t EDIT_FILE_CONTENT_COMMAND = 35;
 
         uint8_t cursorPosition;
-        uint8_t maxCursorPosition;
+        int maxCursorPosition;
 
         TecosFileManager(FileSystem* fileSystem, UIDrawer * uiDrawer, TECOS::UART* uart);
         void enterToDirectory(int position);

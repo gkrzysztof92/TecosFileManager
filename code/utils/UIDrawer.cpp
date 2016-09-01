@@ -28,27 +28,32 @@ void UIDrawer::drawMainWindow() {
         charDrawer->drawChar(205,3,i);
     }
 
+    //third top line
+    for(int i = 17; i < 780; i+=7) {
+        charDrawer->drawChar(205,31,i);
+    }
+
     //right Line
     charDrawer->drawChar(201,1,10);
-    for(int i = 2; i < 3; i++) {
-        charDrawer->drawChar(186,i,10);
+    for(int i = 2; i < layoutLastLinePos; i++) {
+        if (i == 3 || i == 31 ) {
+            charDrawer->drawChar(204, i, 10);
+        } else {
+            charDrawer->drawChar(186, i, 10);
+        }
     }
-    charDrawer->drawChar(204, 3, 10);
-    for (int i = 4; i < 34; i++) {
-        charDrawer->drawChar(186, i, 10);
-    }
-    charDrawer->drawChar(200, 34, 10);
+    charDrawer->drawChar(200, layoutLastLinePos, 10);
 
     //left line
     charDrawer->drawChar(187,1,780);
-    for(int i = 2; i < 3; i++) {
-        charDrawer->drawChar(186,i,780);
+    for(int i = 2; i < layoutLastLinePos; i++) {
+        if (i == 3 || i == 31 ) {
+            charDrawer->drawChar(185, i, 780);
+        } else {
+            charDrawer->drawChar(186,i,780);
+        }
     }
-    charDrawer->drawChar(185, 3, 780);
-    for (int i = 4; i < 34; i++) {
-        charDrawer->drawChar(186, i, 780);
-    }
-    charDrawer->drawChar(188, 34, 780);
+    charDrawer->drawChar(188, layoutLastLinePos, 780);
 
     //singleLines
     for(int i = separatorLineStart; i< separatorLineEnd; i++) {
@@ -67,7 +72,7 @@ void UIDrawer::drawMainWindow() {
 
     //bottom line
     for(int i = 17; i < 780; i+=7) {
-        charDrawer->drawChar(205,34,i);
+        charDrawer->drawChar(205,layoutLastLinePos,i);
     }
 
     //labels

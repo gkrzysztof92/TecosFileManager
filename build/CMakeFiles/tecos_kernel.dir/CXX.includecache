@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/krzysiek/Tecos_Działa!/code/TecosFileManager.cpp
+/home/krzysiek/TecosFileManager/code/TecosFileManager.cpp
 TecosFileManager.h
-/home/krzysiek/Tecos_Działa!/code/TecosFileManager.h
+/home/krzysiek/TecosFileManager/code/TecosFileManager.h
 
-/home/krzysiek/Tecos_Działa!/code/TecosFileManager.h
+/home/krzysiek/TecosFileManager/code/TecosFileManager.h
 string
 -
 vector
@@ -20,45 +20,57 @@ map
 stdio.h
 -
 filesystem/FileSystem.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
 utils/UIDrawer.h
-/home/krzysiek/Tecos_Działa!/code/utils/UIDrawer.h
+/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
 arch/raspberry-pi/serial.h
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/serial.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
 
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/framebuffer.h
+/home/krzysiek/TecosFileManager/code/arch.h
+arch/raspberry-pi/framebuffer.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
+arch/raspberry-pi/memory.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
+arch/raspberry-pi/io.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
+arch/raspberry-pi/time.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
+arch/raspberry-pi/serial.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
+
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
 cstdint
 -
 iostream
 -
 io.h
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/io.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
 
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/io.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
 cstdint
 -
 memory.h
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/memory.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
 
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/memory.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
 cstdint
 -
 string.h
 -
 
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/serial.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
 io.h
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/io.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
 time.h
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/time.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
 
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/time.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
 cstdint
 -
 io.h
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/io.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
 
-/home/krzysiek/Tecos_Działa!/code/filesystem/Directory.h
+/home/krzysiek/TecosFileManager/code/filesystem/Directory.h
 string
 -
 vector
@@ -66,23 +78,23 @@ vector
 map
 -
 FileSystemItem.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystemItem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 File.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/File.h
+/home/krzysiek/TecosFileManager/code/filesystem/File.h
 
-/home/krzysiek/Tecos_Działa!/code/filesystem/File.h
+/home/krzysiek/TecosFileManager/code/filesystem/File.h
 string
 -
 FileSystemItem.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystemItem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 Directory.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/Directory.h
+/home/krzysiek/TecosFileManager/code/filesystem/Directory.h
 
-/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
 Directory.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/Directory.h
+/home/krzysiek/TecosFileManager/code/filesystem/Directory.h
 File.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/File.h
+/home/krzysiek/TecosFileManager/code/filesystem/File.h
 string
 -
 map
@@ -90,19 +102,45 @@ map
 vector
 -
 
-/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystemItem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 string
 -
 
-/home/krzysiek/Tecos_Działa!/code/utils/CharDrawer.h
+/home/krzysiek/TecosFileManager/code/kernel_main.cc
+arch.h
+/home/krzysiek/TecosFileManager/code/arch.h
+output.h
+/home/krzysiek/TecosFileManager/code/output.h
+string
+-
+utils/CharDrawer.h
+/home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
+utils/UIDrawer.h
+/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
+filesystem/FileSystem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
+TecosFileManager.h
+/home/krzysiek/TecosFileManager/code/TecosFileManager.h
+
+/home/krzysiek/TecosFileManager/code/output.h
+iostream
+-
+arch.h
+/home/krzysiek/TecosFileManager/code/arch.h
+
+/home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
 string
 -
 ../arch/raspberry-pi/framebuffer.h
-/home/krzysiek/Tecos_Działa!/code/arch/raspberry-pi/framebuffer.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
 cp437-font.h
-/home/krzysiek/Tecos_Działa!/code/utils/cp437-font.h
+/home/krzysiek/TecosFileManager/code/utils/cp437-font.h
 
-/home/krzysiek/Tecos_Działa!/code/utils/UIDrawer.h
+/home/krzysiek/TecosFileManager/code/utils/UIDrawer.cpp
+UIDrawer.h
+/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
+
+/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
 string
 -
 map
@@ -110,15 +148,15 @@ map
 vector
 -
 CharDrawer.h
-/home/krzysiek/Tecos_Działa!/code/utils/CharDrawer.h
+/home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
 ../filesystem/Directory.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/Directory.h
+/home/krzysiek/TecosFileManager/code/filesystem/Directory.h
 ../filesystem/FileSystemItem.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/FileSystemItem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 ../filesystem/File.h
-/home/krzysiek/Tecos_Działa!/code/filesystem/File.h
+/home/krzysiek/TecosFileManager/code/filesystem/File.h
 
-/home/krzysiek/Tecos_Działa!/code/utils/cp437-font.h
+/home/krzysiek/TecosFileManager/code/utils/cp437-font.h
 stdint.h
 -
 
