@@ -33,6 +33,13 @@ namespace TECOS
                          : "cc");
         }*/
 
+        static inline uint32_t getSysSeconds() {
+            return SYSTEM_TIMER->CounterLO/1000000;
+        }
+
+        //get fake data
+
+
         static inline void Delay(uint32_t _NumberOfCycles)
         {
             DelayCycles(_NumberOfCycles);

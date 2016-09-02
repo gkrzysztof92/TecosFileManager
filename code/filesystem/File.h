@@ -4,6 +4,7 @@
 #include <string>
 #include "FileSystemItem.h"
 #include "Directory.h"
+#include "../utils/LocalDataTimeStub.h"
 
 class File : public FileSystemItem
 {
@@ -13,6 +14,7 @@ class File : public FileSystemItem
         File();
         File(FileSystemItemType fileSystemItemType, std::string name);
         File(FileSystemItemType fileSystemItemType, std::string name, FileSystemItem * parentDirectory);
+        void setFileContent(std::string content);
         virtual ~File();
 
     protected:

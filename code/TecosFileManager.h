@@ -10,6 +10,7 @@
 #include "filesystem/FileSystem.h"
 #include "utils/UIDrawer.h"
 #include "arch/raspberry-pi/serial.h"
+#include "utils/LocalDataTimeStub.h"
 
 
 class TecosFileManager
@@ -19,10 +20,11 @@ class TecosFileManager
         const uint8_t DOWN = 40;
         const uint8_t ENTER = 13;
         const uint8_t NEW_FILE_COMMAND = 49;
-        const uint8_t NEW_DIR_COMMAND = 32;
-        const uint8_t EDIT_NAME_COMMAND = 33;
-        const uint8_t DELETE_COMMAND = 34;
-        const uint8_t EDIT_FILE_CONTENT_COMMAND = 35;
+        const uint8_t NEW_DIR_COMMAND = 50;
+        const uint8_t EDIT_NAME_COMMAND = 51;
+        const uint8_t DELETE_COMMAND = 52;
+        const uint8_t EDIT_FILE_CONTENT_COMMAND = 53;
+        const uint8_t QUIT_COMMAND = 54;
 
         uint8_t cursorPosition;
         int maxCursorPosition;
@@ -34,8 +36,10 @@ class TecosFileManager
         void renameFileSystemItem(int position);
         void deleteFileSystemItem(int position);
         void editFileContent(int position);
+        void quitProgram();
         std::string getKeyFileSystemItem(int position);
-        std::string getTextInput(int limit);
+        std::string getTextInput(int limit, std::string text = "");
+        void setMaxCursorPosition();
         virtual ~TecosFileManager();
 
         void run();

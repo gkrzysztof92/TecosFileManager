@@ -5,6 +5,9 @@
 #include "utils/UIDrawer.h"
 #include "filesystem/FileSystem.h"
 #include "TecosFileManager.h"
+#include "arch/raspberry-pi/time.h"
+#include <ctime>
+
 
 extern uint8_t end;
 extern uint8_t stack;
@@ -17,6 +20,9 @@ void kernel_main()
     std::cout << "Rozmiar sterty: " << (&stack - &end) / 1024 << "KB" << TECOS::endl;
     std::cout << "Adres konca stosu: 0x" << std::hex << reinterpret_cast<uintptr_t>(&stack) << TECOS::endl;
 
+    long long timeLong = 5;
+    time_t time = timeLong;
+    std::cout << asctime(gmtime(&time)) << std::endl;
     TECOS::FRAMEBUFFER frame_buffer(800,600);
 	TECOS::CharDrawer* charDrawer = new TECOS::CharDrawer();
 	charDrawer->setFrameBuffer(&frame_buffer);

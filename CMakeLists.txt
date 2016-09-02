@@ -55,6 +55,7 @@ set(CXX_SOURCE_FILES ${PROJECT_SOURCE_DIR}/code/kernel_main.cc
 			${PROJECT_SOURCE_DIR}/code/filesystem/FileSystem.cpp
 			${PROJECT_SOURCE_DIR}/code/TecosFileManager.cpp
 			${PROJECT_SOURCE_DIR}/code/TecosFileManager.h
+			${PROJECT_SOURCE_DIR}/code/utils/LocalDataTimeStub.h
 )
 
 #Tworzony będzie wykonywalny plik binarny

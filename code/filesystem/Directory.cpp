@@ -7,11 +7,13 @@ Directory::Directory()
 
 Directory::Directory(FileSystemItemType fileSystemItemType, std::string name)
     : FileSystemItem(fileSystemItemType, name) {
+        this->creationDate = LocalDataTimeStub::getDataTime();
 
 }
 
 Directory::Directory(FileSystemItemType fileSystemItemType, std::string name, FileSystemItem* parentDirectory)
     :FileSystemItem(fileSystemItemType, name, parentDirectory) {
+        this->creationDate = LocalDataTimeStub::getDataTime();
 
 }
 

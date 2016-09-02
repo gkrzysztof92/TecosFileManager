@@ -6,6 +6,7 @@
 #include <map>
 #include "FileSystemItem.h"
 #include "File.h"
+#include "../utils/LocalDataTimeStub.h"
 
 class Directory : public FileSystemItem
 {

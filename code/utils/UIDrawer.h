@@ -18,6 +18,9 @@ class UIDrawer
         const std::string newDirCommand = "2 NEW DIR";
         const std::string editFileDirNameCommand = "3 EDIT NAME";
         const std::string deleteCommand = "4 DELETE";
+        const std::string editFileContentCommand = "5 EDIT FILE CONTENT";
+        const std::string quitCommand = "6 QUIT";
+
         const std::string nameLabel = "Name";
         const std::string sizeLabel = "Size";
         const std::string creationDateLabel = "Date";
@@ -49,8 +52,8 @@ class UIDrawer
         void setCharDrawer(TECOS::CharDrawer *charDrawer);
         void drawUI();
         void drawDirectoryContent(Directory * directory, int position);
-        void drawFileInfo(File * file);
-        void drawDirectoryInfo(Directory * directory);
+        void drawFileInfo(File * file, int line, bool current);
+        void drawDirectoryInfo(Directory * directory, int line, bool current);
         void clearDirectoryContent();
         void showAlert(std::string message);
         void drawTextInput(std::string text);

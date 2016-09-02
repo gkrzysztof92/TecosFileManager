@@ -16,6 +16,9 @@ class FileSystemItem
         FileSystemItemType fileSystemItemType;
         FileSystemItem * parentFileSystemItem;
         std::string name;
+        std::string creationDate;
+        std::string modificationDate;
+        int itemSize = 0;
 
         FileSystemItem();
         FileSystemItem(FileSystemItemType fileSystemItemType, std::string name);
