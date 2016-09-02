@@ -17,11 +17,11 @@ void TecosFileManager::run() {
     cursorPosition = 1;
     uiDrawer->drawUI();
     uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
-
+    uiDrawer->drawPath(currentPath);
     std::map<std::string, FileSystemItem*>::size_type maxPosition =
             fileSystem->directory->directoryContent.size();
     this->maxCursorPosition = static_cast<int>(maxPosition);
-    std::cout<< "MAX POS: " << maxPosition << std::endl;
+    //std::cout<< "MAX POS: " << maxPosition << std::endl;
     int dataIn = 0;
     int counter = 0;
     while(true) {
@@ -34,15 +34,15 @@ void TecosFileManager::run() {
         if (dataIn == 183 && counter == 3 && cursorPosition > 0) {
             cursorPosition--;
             uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
-            std::cout << cursorPosition << std::endl;
+            //std::cout << cursorPosition << std::endl;
             dataIn = 0;
         }
 
         // DOWN ARROW
         if (dataIn == 184 && counter == 3 && cursorPosition < maxCursorPosition) {
             cursorPosition++;
-            std::cout << cursorPosition << std::endl;
-            std::cout << TECOS::TIME::getSysSeconds() << std::endl;
+            //std::cout << cursorPosition << std::endl;
+            //std::cout << TECOS::TIME::getSysSeconds() << std::endl;
             uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
             dataIn = 0;
             counter = 0;
@@ -56,42 +56,42 @@ void TecosFileManager::run() {
         }
 
         if (dataIn == NEW_FILE_COMMAND) {
-            std::cout << "press 1" << std::endl;
+            //std::cout << "press 1" << std::endl;
             createNewFile(fileSystem->directory);
             dataIn = 0;
             counter = 0;
         }
 
         if (dataIn == NEW_DIR_COMMAND) {
-            std::cout << "press 2" << std::endl;
+            //std::cout << "press 2" << std::endl;
             createNewDirectory(fileSystem->directory);
             dataIn = 0;
             counter = 0;
         }
 
-        if (dataIn == EDIT_NAME_COMMAND) {
-            std::cout << "press 3" << std::endl;
+        if (dataIn == EDIT_NAME_COMMAND && cursorPosition != 0) {
+            //std::cout << "press 3" << std::endl;
             renameFileSystemItem(cursorPosition);
             dataIn = 0;
             counter = 0;
         }
 
-        if (dataIn == DELETE_COMMAND) {
-            std::cout << "press 4" << std::endl;
+        if (dataIn == DELETE_COMMAND && cursorPosition != 0) {
+            //std::cout << "press 4" << std::endl;
             deleteFileSystemItem(cursorPosition);
             dataIn = 0;
             counter = 0;
         }
 
         if (dataIn == EDIT_FILE_CONTENT_COMMAND) {
-            std::cout << "press 5" << std::endl;
+            //std::cout << "press 5" << std::endl;
             editFileContent(cursorPosition);
             dataIn = 0;
             counter = 0;
         }
 
         if (dataIn == QUIT_COMMAND) {
-            std::cout << "press 6" << std::endl;
+            //std::cout << "press 6" << std::endl;
             quitProgram();
             dataIn = 0;
             counter = 0;
@@ -110,6 +110,8 @@ void TecosFileManager::enterToDirectory(int position) {
 
     if(position == 0) {
         if(fileSystem->directory->parentFileSystemItem != nullptr) {
+            int charsToDel = fileSystem->directory->name.size();
+            currentPath = currentPath.substr(0, currentPath.size() - charsToDel - 1);
             fileSystem->directory =
             (Directory*) fileSystem->directory->parentFileSystemItem;
             }
@@ -117,6 +119,7 @@ void TecosFileManager::enterToDirectory(int position) {
         std::string key = getKeyFileSystemItem(position);
         if (fileSystem->directory->directoryContent.at(key)->fileSystemItemType == FS_DIRECTORY) {
             fileSystem->directory = (Directory*)fileSystem->directory->directoryContent.at(key);
+            currentPath += fileSystem->directory->name + "/";
         }
     }
 
@@ -124,6 +127,7 @@ void TecosFileManager::enterToDirectory(int position) {
             fileSystem->directory->directoryContent.size();
     cursorPosition = 0;
     this->maxCursorPosition = static_cast<int>(maxPosition);
+    uiDrawer->drawPath(currentPath);
     //std::cout<< "new max pos: " << maxCursorPosition << std::endl;
     uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
 }
@@ -148,7 +152,7 @@ void TecosFileManager::createNewDirectory(Directory * dir) {
 void TecosFileManager::createNewFile(Directory * dir) {
 
     uiDrawer->showAlert("Enter the file name");
-    std::cout << "new folder add" << std::endl;
+    //std::cout << "new folder add" << std::endl;
     std::string fileName = getTextInput(20);
 
     if(fileName.size() > 0) {
@@ -178,6 +182,7 @@ void TecosFileManager::deleteFileSystemItem(int position) {
     } else {
         uiDrawer->showAlert("Wrong command!, Deleting aborted");
     }
+    uiDrawer->drawTextInput(" ");
 }
 
 
@@ -195,7 +200,7 @@ void TecosFileManager::renameFileSystemItem(int position) {
             (std::pair<std::string, FileSystemItem*>(newName, item));
         uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
     }
-
+    uiDrawer->drawTextInput(" ");
 }
 
 void TecosFileManager::editFileContent(int position) {
@@ -208,7 +213,7 @@ void TecosFileManager::editFileContent(int position) {
         std::string fileContent = getTextInput(50, file->content);
         file->setFileContent(fileContent);
     }
-
+    uiDrawer->drawTextInput(" ");
 }
 
 std::string TecosFileManager::getKeyFileSystemItem(int position) {
@@ -250,7 +255,7 @@ std::string TecosFileManager::getTextInput(int limit, std::string text) {
         if(charr == 127) {
             textIn.pop_back();
             //textIn = textIn.substr(0, textIn.length() - 1);
-            std::cout<<std::dec<<(int)charr<<std::endl;
+            //std::cout<<std::dec<<(int)charr<<std::endl;
         }
 
         uiDrawer->drawTextInput(textIn);

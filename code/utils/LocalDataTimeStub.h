@@ -12,7 +12,7 @@ class LocalDataTimeStub
             time_t time = seconds;
             char buff[80];
             struct tm * lt = localtime(&time);
-            strftime(buff, 80, "%Y-%m-%d %H-%M-%S", lt);
+            strftime(buff, 80, "%h %d %H:%M", lt);
             std::string formatedDate(buff);
             return formatedDate;
         }

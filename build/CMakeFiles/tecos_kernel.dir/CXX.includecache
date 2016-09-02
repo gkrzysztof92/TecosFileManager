@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/home/krzysiek/TecosFileManager/code/TecosFileManager.cpp
+TecosFileManager.h
+/home/krzysiek/TecosFileManager/code/TecosFileManager.h
+
+/home/krzysiek/TecosFileManager/code/TecosFileManager.h
+string
+-
+vector
+-
+map
+-
+stdio.h
+-
+filesystem/FileSystem.h
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
+utils/UIDrawer.h
+/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
+arch/raspberry-pi/serial.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
+utils/LocalDataTimeStub.h
+/home/krzysiek/TecosFileManager/code/utils/LocalDataTimeStub.h
+
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
 cstdint
 -
@@ -25,6 +47,12 @@ cstdint
 -
 string.h
 -
+
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
+io.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
+time.h
+/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
 
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
 cstdint
@@ -56,6 +84,18 @@ Directory.h
 ../utils/LocalDataTimeStub.h
 /home/krzysiek/TecosFileManager/code/utils/LocalDataTimeStub.h
 
+/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
+Directory.h
+/home/krzysiek/TecosFileManager/code/filesystem/Directory.h
+File.h
+/home/krzysiek/TecosFileManager/code/filesystem/File.h
+string
+-
+map
+-
+vector
+-
+
 /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 string
 -
@@ -73,10 +113,6 @@ cp437-font.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
 ctime
 -
-
-/home/krzysiek/TecosFileManager/code/utils/UIDrawer.cpp
-UIDrawer.h
-/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
 
 /home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
 string

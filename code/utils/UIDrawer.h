@@ -13,6 +13,7 @@
 class UIDrawer
 {
     public:
+
         const std::string applicationName = "TECOS FILE MANAGER";
         const std::string newFileCommand = "1 NEW FILE";
         const std::string newDirCommand = "2 NEW DIR";
@@ -34,13 +35,14 @@ class UIDrawer
         const int labelsLinePos = 5;
         const int separatorLineStart = 4;
         const int separatorLineEnd = 31;
-        const int nameSizeSeparatorPos = 270;
-        const int sizeDateSeparatorPos = 360;
-        const int dateModSeparatorPos = 470;
-        const int modMd5SeparatorPos = 570;
+        const int nameSizeSeparatorPos = 220;
+        const int sizeDateSeparatorPos = 320;
+        const int dateModSeparatorPos = 450;
+        const int modMd5SeparatorPos = 580;
 
         const int RightLeftMargin = 10;
 
+        const int pathLine = 32;
         const int alertLine = 34;
         const int textInputLine = 35;
         const int commandBarLine = 36;
@@ -57,6 +59,7 @@ class UIDrawer
         void clearDirectoryContent();
         void showAlert(std::string message);
         void drawTextInput(std::string text);
+        void drawPath(std::string path);
     protected:
 
     private:

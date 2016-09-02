@@ -28,6 +28,7 @@ class TecosFileManager
 
         uint8_t cursorPosition;
         int maxCursorPosition;
+        std::string currentPath = "./";
 
         TecosFileManager(FileSystem* fileSystem, UIDrawer * uiDrawer, TECOS::UART* uart);
         void enterToDirectory(int position);

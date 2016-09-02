@@ -10,6 +10,7 @@ class File : public FileSystemItem
 {
     public:
         std::string content;
+        std::string md5;
 
         File();
         File(FileSystemItemType fileSystemItemType, std::string name);
