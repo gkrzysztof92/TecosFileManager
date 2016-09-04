@@ -90,12 +90,12 @@ void TecosFileManager::run() {
             counter = 0;
         }
 
-        if (dataIn == QUIT_COMMAND) {
+        /*if (dataIn == QUIT_COMMAND) {
             //std::cout << "press 6" << std::endl;
             quitProgram();
             dataIn = 0;
             counter = 0;
-        }
+        }*/
 
         if(counter == 3 || (counter == 1 && dataIn != 27)) {
             dataIn = 0;
@@ -114,18 +114,20 @@ void TecosFileManager::enterToDirectory(int position) {
             currentPath = currentPath.substr(0, currentPath.size() - charsToDel - 1);
             fileSystem->directory =
             (Directory*) fileSystem->directory->parentFileSystemItem;
+            cursorPosition = 0;
             }
     } else {
         std::string key = getKeyFileSystemItem(position);
         if (fileSystem->directory->directoryContent.at(key)->fileSystemItemType == FS_DIRECTORY) {
             fileSystem->directory = (Directory*)fileSystem->directory->directoryContent.at(key);
             currentPath += fileSystem->directory->name + "/";
+            cursorPosition = 0;
         }
     }
 
     std::map<std::string, FileSystemItem*>::size_type maxPosition =
             fileSystem->directory->directoryContent.size();
-    cursorPosition = 0;
+
     this->maxCursorPosition = static_cast<int>(maxPosition);
     uiDrawer->drawPath(currentPath);
     //std::cout<< "new max pos: " << maxCursorPosition << std::endl;
@@ -134,35 +136,44 @@ void TecosFileManager::enterToDirectory(int position) {
 
 void TecosFileManager::createNewDirectory(Directory * dir) {
 
-    uiDrawer->showAlert("Enter the directory name");
-    std::cout << "new file add" << std::endl;
+    uiDrawer->showAlert("Creating new directory, enter the name (Esc - Cancel)");
+    //std::cout << "new file add" << std::endl;
     std::string fileName = getTextInput(20);
 
     if(fileName.size() > 0) {
-        dir->createFileSystemItem(FS_DIRECTORY, fileName);
-    }
-    uiDrawer->showAlert("Directory created");
-    uiDrawer->drawTextInput(" ");
-    setMaxCursorPosition();
-    this->cursorPosition = 1;
-    uiDrawer->drawDirectoryContent(dir, 1);
-
-}
-
-void TecosFileManager::createNewFile(Directory * dir) {
-
-    uiDrawer->showAlert("Enter the file name");
-    //std::cout << "new folder add" << std::endl;
-    std::string fileName = getTextInput(20);
-
-    if(fileName.size() > 0) {
-            dir->createFileSystemItem(FS_FILEE, fileName);
-            uiDrawer->showAlert("Creating new file, enter the name (Esc - Cancel)");
+        bool status = dir->createFileSystemItem(FS_DIRECTORY, fileName);
+        if(status) {
+            uiDrawer->showAlert("Directory created!");
             setMaxCursorPosition();
             this->cursorPosition = 1;
             uiDrawer->drawDirectoryContent(dir, 1);
         } else {
+            uiDrawer->showAlert("This name is already used, Create directory canceled!");
+        }
+    } else {
+        uiDrawer->showAlert("Canceled create directory!");
+    }
+    uiDrawer->drawTextInput(" ");
+}
 
+void TecosFileManager::createNewFile(Directory * dir) {
+
+    uiDrawer->showAlert("Creating new file, enter the name (Esc - Cancel)");
+    std::string fileName = getTextInput(FILE_DIR_NAME_SIZE);
+
+    if(fileName.size() > 0) {
+            bool status = dir->createFileSystemItem(FS_FILEE, fileName);
+                if (status) {
+                    uiDrawer->showAlert("File created!");
+                    setMaxCursorPosition();
+                    this->cursorPosition = 1;
+                    uiDrawer->drawDirectoryContent(dir, 1);
+                } else {
+                    uiDrawer->showAlert("This name is already used, Create file canceled!");
+                }
+
+        } else {
+            uiDrawer->showAlert("Canceled create file!");
         }
 
     uiDrawer->drawTextInput(" ");
@@ -192,16 +203,24 @@ void TecosFileManager::deleteFileSystemItem(int position) {
 void TecosFileManager::renameFileSystemItem(int position) {
 
     std::string key = getKeyFileSystemItem(position);
-    uiDrawer->showAlert("Enter new name");
-    std::string newName = getTextInput(20);
-    if(newName.size() > 1) {
-        FileSystemItem* item = fileSystem->directory->directoryContent.at(key);
-        item->name = newName;
-        item->modificationDate = LocalDataTimeStub::getDataTime();
-        fileSystem->directory->directoryContent.erase(key);
-        fileSystem->directory->directoryContent.insert
-            (std::pair<std::string, FileSystemItem*>(newName, item));
-        uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
+    uiDrawer->showAlert("Rename file system item, enter new name (Esc - Cancel)");
+    std::string newName = getTextInput(FILE_DIR_NAME_SIZE);
+    if(newName.size() > 0) {
+        if(fileSystem->directory->directoryContent[newName] == nullptr) {
+            FileSystemItem* item = fileSystem->directory->directoryContent.at(key);
+            item->name = newName;
+            item->modificationDate = LocalDataTimeStub::getDataTime();
+            fileSystem->directory->directoryContent.erase(key);
+            fileSystem->directory->directoryContent.insert
+                (std::pair<std::string, FileSystemItem*>(newName, item));
+            uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
+            uiDrawer->showAlert("Renamed file system item!");
+        } else {
+            uiDrawer->showAlert("This name is already used, Renamed canceled!");
+        }
+
+    } else {
+        uiDrawer->showAlert("Rename file system item canceled!");
     }
     uiDrawer->drawTextInput(" ");
 }
@@ -211,10 +230,17 @@ void TecosFileManager::editFileContent(int position) {
     std::string key = getKeyFileSystemItem(position);
     FileSystemItem * item = fileSystem->directory->directoryContent.at(key);
     if(item->fileSystemItemType == FS_FILEE) {
-        uiDrawer->showAlert("Enter content of file:");
+        uiDrawer->showAlert("Edit content of file, enter content of file: (Esc - Cancel)");
         File * file = (File*) item;
         std::string fileContent = getTextInput(50, file->content);
-        file->setFileContent(fileContent);
+
+        if (fileContent.size() > 0) {
+            file->setFileContent(fileContent);
+            uiDrawer->showAlert("Changed content of file");
+            uiDrawer->drawDirectoryContent(fileSystem->directory, cursorPosition);
+        } else {
+            uiDrawer->showAlert("Edit content of file canceled!");
+        }
     }
     uiDrawer->drawTextInput(" ");
 }
@@ -247,7 +273,7 @@ std::string TecosFileManager::getTextInput(int limit, std::string text) {
     uiDrawer->drawTextInput(textIn);
     do {
         charr = uart->GetChar();
-        std::cout<<std::dec<<(int)charr<<std::endl;
+        //std::cout<<std::dec<<(int)charr<<std::endl;
 
         if((charr != 13 && charr != 127 && charr != 27)
            && textIn.size() <= limit - 1) {

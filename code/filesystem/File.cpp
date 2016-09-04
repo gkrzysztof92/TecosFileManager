@@ -20,6 +20,7 @@ void File::setFileContent(std::string content) {
     this->content = content;
     this->itemSize = static_cast<int>(content.size()) * 8;
     this->modificationDate = LocalDataTimeStub::getDataTime();
+    this->md5Str = MD5(content).hexdigest();
 }
 
 

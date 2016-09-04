@@ -54,6 +54,7 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj
  /home/krzysiek/TecosFileManager/code/filesystem/File.h
  /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
  /home/krzysiek/TecosFileManager/code/utils/LocalDataTimeStub.h
+ /home/krzysiek/TecosFileManager/code/utils/md5.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj
  /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
  /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
@@ -63,6 +64,7 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj
  /home/krzysiek/TecosFileManager/code/filesystem/File.h
  /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
  /home/krzysiek/TecosFileManager/code/utils/LocalDataTimeStub.h
+ /home/krzysiek/TecosFileManager/code/utils/md5.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj
  /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
  /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
@@ -73,6 +75,7 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj
  /home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
  /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
  /home/krzysiek/TecosFileManager/code/utils/LocalDataTimeStub.h
+ /home/krzysiek/TecosFileManager/code/utils/md5.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj
  /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.cpp
  /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h

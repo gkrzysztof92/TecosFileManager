@@ -53,6 +53,7 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj: ../code/filesyste
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj: ../code/filesystem/File.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj: ../code/filesystem/FileSystemItem.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj: ../code/utils/LocalDataTimeStub.h
+CMakeFiles/tecos_kernel.dir/code/filesystem/Directory.cpp.obj: ../code/utils/md5.h
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/arch/raspberry-pi/io.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/arch/raspberry-pi/memory.h
@@ -62,6 +63,7 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/filesystem/Fil
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/filesystem/File.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/filesystem/FileSystemItem.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/utils/LocalDataTimeStub.h
+CMakeFiles/tecos_kernel.dir/code/filesystem/File.cpp.obj: ../code/utils/md5.h
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/arch/raspberry-pi/io.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/arch/raspberry-pi/memory.h
@@ -72,6 +74,7 @@ CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/filesyst
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/filesystem/FileSystem.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/filesystem/FileSystemItem.h
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/utils/LocalDataTimeStub.h
+CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystem.cpp.obj: ../code/utils/md5.h
 
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj: ../code/filesystem/FileSystemItem.cpp
 CMakeFiles/tecos_kernel.dir/code/filesystem/FileSystemItem.cpp.obj: ../code/filesystem/FileSystemItem.h

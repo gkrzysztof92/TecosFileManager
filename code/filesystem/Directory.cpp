@@ -23,7 +23,7 @@ Directory::~Directory()
     //dtor
 }
 
-void Directory::createFileSystemItem(FileSystemItemType type, std::string name){
+bool Directory::createFileSystemItem(FileSystemItemType type, std::string name){
 
     if(directoryContent[name] == nullptr) {
         if(type == FS_DIRECTORY) {
@@ -31,7 +31,11 @@ void Directory::createFileSystemItem(FileSystemItemType type, std::string name){
         } else {
             directoryContent[name] = (FileSystemItem*) new File(type, name, this);
         }
+        return true;
+    } else {
+        return false;
     }
+
 }
 
 void Directory::deleteFileSystemItem(std::string name) {

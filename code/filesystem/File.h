@@ -5,12 +5,13 @@
 #include "FileSystemItem.h"
 #include "Directory.h"
 #include "../utils/LocalDataTimeStub.h"
+#include "../utils/md5.h"
 
 class File : public FileSystemItem
 {
     public:
         std::string content;
-        std::string md5;
+        std::string md5Str;
 
         File();
         File(FileSystemItemType fileSystemItemType, std::string name);

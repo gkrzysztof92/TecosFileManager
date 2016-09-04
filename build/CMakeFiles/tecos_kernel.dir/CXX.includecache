@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/krzysiek/TecosFileManager/code/TecosFileManager.cpp
-TecosFileManager.h
-/home/krzysiek/TecosFileManager/code/TecosFileManager.h
-
 /home/krzysiek/TecosFileManager/code/TecosFileManager.h
 string
 -
@@ -40,10 +36,6 @@ arch/raspberry-pi/time.h
 arch/raspberry-pi/serial.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
 
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.cc
-framebuffer.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
-
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/framebuffer.h
 cstdint
 -
@@ -52,17 +44,9 @@ iostream
 io.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
 
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.cc
-io.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
-
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
 cstdint
 -
-memory.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
-
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.cc
 memory.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/memory.h
 
@@ -72,17 +56,9 @@ cstdint
 string.h
 -
 
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.cc
-serial.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
-
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/serial.h
 io.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
-time.h
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
-
-/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.cc
 time.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
 
@@ -92,10 +68,6 @@ cstdint
 io.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/io.h
 
-/home/krzysiek/TecosFileManager/code/filesystem/Directory.cpp
-Directory.h
-/home/krzysiek/TecosFileManager/code/filesystem/Directory.h
-
 /home/krzysiek/TecosFileManager/code/filesystem/Directory.h
 string
 -
@@ -110,10 +82,6 @@ File.h
 ../utils/LocalDataTimeStub.h
 /home/krzysiek/TecosFileManager/code/utils/LocalDataTimeStub.h
 
-/home/krzysiek/TecosFileManager/code/filesystem/File.cpp
-File.h
-/home/krzysiek/TecosFileManager/code/filesystem/File.h
-
 /home/krzysiek/TecosFileManager/code/filesystem/File.h
 string
 -
@@ -123,10 +91,8 @@ Directory.h
 /home/krzysiek/TecosFileManager/code/filesystem/Directory.h
 ../utils/LocalDataTimeStub.h
 /home/krzysiek/TecosFileManager/code/utils/LocalDataTimeStub.h
-
-/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.cpp
-FileSystem.h
-/home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
+../utils/md5.h
+/home/krzysiek/TecosFileManager/code/utils/md5.h
 
 /home/krzysiek/TecosFileManager/code/filesystem/FileSystem.h
 Directory.h
@@ -139,10 +105,6 @@ map
 -
 vector
 -
-
-/home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.cpp
-FileSystemItem.h
-/home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 
 /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 string
@@ -168,25 +130,11 @@ arch/raspberry-pi/time.h
 ctime
 -
 
-/home/krzysiek/TecosFileManager/code/output.cc
-output.h
-/home/krzysiek/TecosFileManager/code/output.h
-
 /home/krzysiek/TecosFileManager/code/output.h
 iostream
 -
 arch.h
 /home/krzysiek/TecosFileManager/code/arch.h
-
-/home/krzysiek/TecosFileManager/code/stub.cc
-sys/stat.h
--
-errno.h
--
-
-/home/krzysiek/TecosFileManager/code/utils/CharDrawer.cpp
-CharDrawer.h
-/home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
 
 /home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
 string
@@ -200,12 +148,6 @@ cp437-font.h
 ../arch/raspberry-pi/time.h
 /home/krzysiek/TecosFileManager/code/arch/raspberry-pi/time.h
 ctime
--
-
-/home/krzysiek/TecosFileManager/code/utils/UIDrawer.cpp
-UIDrawer.h
-/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
-string
 -
 
 /home/krzysiek/TecosFileManager/code/utils/UIDrawer.h
@@ -227,21 +169,9 @@ CharDrawer.h
 /home/krzysiek/TecosFileManager/code/filesystem/FileSystemItem.h
 ../filesystem/File.h
 /home/krzysiek/TecosFileManager/code/filesystem/File.h
-md5.h
-/home/krzysiek/TecosFileManager/code/utils/md5.h
-
-/home/krzysiek/TecosFileManager/code/utils/cp437-font.cc
-cp437-font.h
-/home/krzysiek/TecosFileManager/code/utils/cp437-font.h
 
 /home/krzysiek/TecosFileManager/code/utils/cp437-font.h
 stdint.h
--
-
-/home/krzysiek/TecosFileManager/code/utils/md5.cpp
-md5.h
-/home/krzysiek/TecosFileManager/code/utils/md5.h
-cstdio
 -
 
 /home/krzysiek/TecosFileManager/code/utils/md5.h

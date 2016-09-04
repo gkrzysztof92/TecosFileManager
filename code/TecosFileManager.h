@@ -26,6 +26,9 @@ class TecosFileManager
         const uint8_t EDIT_FILE_CONTENT_COMMAND = 53;
         const uint8_t QUIT_COMMAND = 54;
 
+        const uint8_t FILE_DIR_NAME_SIZE = 20;
+        const uint8_t FILE_CONTENT_SIZE = 50;
+
         uint8_t cursorPosition;
         int maxCursorPosition;
         std::string currentPath = "./";

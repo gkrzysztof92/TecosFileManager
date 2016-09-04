@@ -17,7 +17,7 @@ class Directory : public FileSystemItem
         Directory();
         Directory(FileSystemItemType fileSystemItemType, std::string name);
         Directory(FileSystemItemType fileSystemItemType, std::string name, FileSystemItem* parentDirectory);
-        void createFileSystemItem(FileSystemItemType type, std::string name);
+        bool createFileSystemItem(FileSystemItemType type, std::string name);
         void deleteFileSystemItem(std::string name);
         void renameFileSystemItem(std::string currentName, std::string newName);
         std::vector<std::string> getListOfItemsInDirectory();
