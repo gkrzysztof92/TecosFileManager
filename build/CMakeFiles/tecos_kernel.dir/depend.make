@@ -20,6 +20,7 @@ CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj: ../code/utils/CharDra
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj: ../code/utils/LocalDataTimeStub.h
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj: ../code/utils/UIDrawer.h
 CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj: ../code/utils/cp437-font.h
+CMakeFiles/tecos_kernel.dir/code/TecosFileManager.cpp.obj: ../code/utils/md5.h
 
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj: ../code/arch/raspberry-pi/framebuffer.cc
 CMakeFiles/tecos_kernel.dir/code/arch/raspberry-pi/framebuffer.cc.obj: ../code/arch/raspberry-pi/framebuffer.h
@@ -92,6 +93,7 @@ CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj: ../code/utils/CharDrawer.h
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj: ../code/utils/LocalDataTimeStub.h
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj: ../code/utils/UIDrawer.h
 CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj: ../code/utils/cp437-font.h
+CMakeFiles/tecos_kernel.dir/code/kernel_main.cc.obj: ../code/utils/md5.h
 
 CMakeFiles/tecos_kernel.dir/code/output.cc.obj: ../code/arch.h
 CMakeFiles/tecos_kernel.dir/code/output.cc.obj: ../code/arch/raspberry-pi/framebuffer.h
@@ -123,7 +125,11 @@ CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj: ../code/utils/LocalData
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj: ../code/utils/UIDrawer.cpp
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj: ../code/utils/UIDrawer.h
 CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj: ../code/utils/cp437-font.h
+CMakeFiles/tecos_kernel.dir/code/utils/UIDrawer.cpp.obj: ../code/utils/md5.h
 
 CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj: ../code/utils/cp437-font.cc
 CMakeFiles/tecos_kernel.dir/code/utils/cp437-font.cc.obj: ../code/utils/cp437-font.h
+
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj: ../code/utils/md5.cpp
+CMakeFiles/tecos_kernel.dir/code/utils/md5.cpp.obj: ../code/utils/md5.h
 

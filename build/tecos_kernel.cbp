@@ -112,6 +112,8 @@
       </Unit>
       <Unit filename="/home/krzysiek/TecosFileManager/code/utils/cp437-font.cc">
       </Unit>
+      <Unit filename="/home/krzysiek/TecosFileManager/code/utils/md5.cpp">
+      </Unit>
       <Unit filename="/home/krzysiek/TecosFileManager/code/TecosFileManager.h">
       </Unit>
       <Unit filename="/home/krzysiek/TecosFileManager/code/arch/raspberry-pi/bootstrap.S">
@@ -145,6 +147,8 @@
       <Unit filename="/home/krzysiek/TecosFileManager/code/utils/UIDrawer.h">
       </Unit>
       <Unit filename="/home/krzysiek/TecosFileManager/code/utils/cp437-font.h">
+      </Unit>
+      <Unit filename="/home/krzysiek/TecosFileManager/code/utils/md5.h">
       </Unit>
       <Unit filename="/home/krzysiek/TecosFileManager/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

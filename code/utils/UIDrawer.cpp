@@ -1,4 +1,7 @@
 #include "UIDrawer.h"
+#include <string>
+
+using std::string;
 
 UIDrawer::UIDrawer()
 {
@@ -21,7 +24,7 @@ void UIDrawer::drawMainWindow() {
         charDrawer->drawChar(205,1,i);
     }
 
-    charDrawer->drawLine(applicationName, 2, 200);
+    charDrawer->drawLine(applicationName, 2, 300);
 
     //second top line
     for(int i = 17; i < 780; i+=7) {
@@ -32,6 +35,12 @@ void UIDrawer::drawMainWindow() {
     for(int i = 17; i < 780; i+=7) {
         charDrawer->drawChar(205,31,i);
     }
+
+    //another one top line
+    for(int i = 17; i < 780; i+=7) {
+        charDrawer->drawChar(205,6,i);
+    }
+
 
     //right Line
     charDrawer->drawChar(201,1,10);
@@ -76,11 +85,11 @@ void UIDrawer::drawMainWindow() {
     }
 
     //labels
-    charDrawer->drawLine(nameLabel, labelsLinePos, 150);
-    charDrawer->drawLine(sizeLabel, labelsLinePos, 300);
-    charDrawer->drawLine(creationDateLabel, labelsLinePos, 400);
-    charDrawer->drawLine(modificationDateLabel, labelsLinePos, 500);
-    charDrawer->drawLine(md5Label, labelsLinePos, 600);
+    charDrawer->drawLine(nameLabel, labelsLinePos, 100);
+    charDrawer->drawLine(sizeLabel, labelsLinePos, 250);
+    charDrawer->drawLine(creationDateLabel, labelsLinePos, 370);
+    charDrawer->drawLine(modificationDateLabel, labelsLinePos, 480);
+    charDrawer->drawLine(md5Label, labelsLinePos, 670);
 
 }
 
@@ -177,7 +186,7 @@ void UIDrawer::drawFileInfo(File * file, int line, bool current) {
     std::string itemSize = converter.str();
 
     if (current) {
-        //std::string itemSize = st(file->itemSize);
+        //std::string itemSize = st(file->itemSize);5
         charDrawer->drawLine(file->name, line, 30, 102, 255, 102);
         charDrawer->drawLine(itemSize, line, nameSizeSeparatorPos + 10, 102, 255, 102);
         charDrawer->drawLine(file->creationDate, line, sizeDateSeparatorPos + 10, 102, 255, 102);
@@ -202,12 +211,14 @@ void UIDrawer::drawDirectoryInfo(Directory * directory,int line, bool current) {
         charDrawer->drawLine("<DIR>", line, nameSizeSeparatorPos + 10, 102, 255, 102);
         charDrawer->drawLine(directory->creationDate, line, sizeDateSeparatorPos + 10, 102, 255, 102);
         charDrawer->drawLine(directory->modificationDate, line, dateModSeparatorPos +10, 102, 255, 102);
+	charDrawer->drawLine(md5(directory->name).substr(1, 17)+"...", line, modMd5SeparatorPos +10, 102, 255, 102);
 
     } else {
         charDrawer->drawLine("/" + directory->name, line, 30);
         charDrawer->drawLine("<DIR>", line, nameSizeSeparatorPos + 10);
         charDrawer->drawLine(directory->creationDate, line, sizeDateSeparatorPos + 10) ;
         charDrawer->drawLine(directory->modificationDate, line, dateModSeparatorPos +10);
+	charDrawer->drawLine(md5(directory->name).substr(1, 17)+"...", line, modMd5SeparatorPos +10, 102, 255, 102);
     }
 }
 

@@ -18,6 +18,7 @@ class FileSystemItem
         std::string name;
         std::string creationDate;
         std::string modificationDate;
+	std::string md5;
         int itemSize = 0;
 
         FileSystemItem();
