@@ -121,6 +121,8 @@ map
 -
 vector
 -
+sstream
+-
 CharDrawer.h
 /home/krzysiek/TecosFileManager/code/utils/CharDrawer.h
 ../filesystem/Directory.h

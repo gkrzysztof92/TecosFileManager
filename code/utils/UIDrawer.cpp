@@ -172,9 +172,12 @@ void UIDrawer::clearDirectoryContent() {
 
 void UIDrawer::drawFileInfo(File * file, int line, bool current) {
 
+    std::ostringstream converter;
+    converter << file->itemSize;
+    std::string itemSize = converter.str();
+
     if (current) {
         //std::string itemSize = st(file->itemSize);
-        std::string itemSize = "125";
         charDrawer->drawLine(file->name, line, 30, 102, 255, 102);
         charDrawer->drawLine(itemSize, line, nameSizeSeparatorPos + 10, 102, 255, 102);
         charDrawer->drawLine(file->creationDate, line, sizeDateSeparatorPos + 10, 102, 255, 102);
@@ -182,7 +185,6 @@ void UIDrawer::drawFileInfo(File * file, int line, bool current) {
 
     } else {
         //std::string itemSize = to_string(file->itemSize);
-        std::string itemSize = "" + file->itemSize;
         charDrawer->drawLine(file->name, line, 30);
         charDrawer->drawLine(itemSize, line, nameSizeSeparatorPos + 10);
         charDrawer->drawLine(file->creationDate, line, sizeDateSeparatorPos + 10) ;
@@ -194,6 +196,8 @@ void UIDrawer::drawFileInfo(File * file, int line, bool current) {
 void UIDrawer::drawDirectoryInfo(Directory * directory,int line, bool current) {
 
     if (current) {
+
+
         charDrawer->drawLine("/" + directory->name, line, 30, 102, 255, 102);
         charDrawer->drawLine("<DIR>", line, nameSizeSeparatorPos + 10, 102, 255, 102);
         charDrawer->drawLine(directory->creationDate, line, sizeDateSeparatorPos + 10, 102, 255, 102);
@@ -217,6 +221,9 @@ void UIDrawer::showAlert(std::string message) {
 
 void UIDrawer::drawPath(std::string path)
 {
+    for (int j = 30;j < 800; j+= 7) {
+        charDrawer->drawChar(219, pathLine, j, 0, 0, 0);
+    }
     charDrawer->drawLine(path, pathLine, 30);
 }
 

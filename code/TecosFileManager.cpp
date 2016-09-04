@@ -156,19 +156,22 @@ void TecosFileManager::createNewFile(Directory * dir) {
     std::string fileName = getTextInput(20);
 
     if(fileName.size() > 0) {
-        dir->createFileSystemItem(FS_FILEE, fileName);
-    }
-    uiDrawer->showAlert("File created");
+            dir->createFileSystemItem(FS_FILEE, fileName);
+            uiDrawer->showAlert("Creating new file, enter the name (Esc - Cancel)");
+            setMaxCursorPosition();
+            this->cursorPosition = 1;
+            uiDrawer->drawDirectoryContent(dir, 1);
+        } else {
+
+        }
+
     uiDrawer->drawTextInput(" ");
-    setMaxCursorPosition();
-    this->cursorPosition = 1;
-    uiDrawer->drawDirectoryContent(dir, 1);
 }
 
 void TecosFileManager::deleteFileSystemItem(int position) {
 
     std::string key = getKeyFileSystemItem(position);
-    uiDrawer->showAlert("Are you sure you want to delete selected item? Y-Yes, N-No");
+    uiDrawer->showAlert("Are you sure you want to delete selected item? (Y-Yes, N-No)");
     std::string answer = getTextInput(1);
     if (answer.compare("Y") == 0 || answer.compare("y") == 0) {
         std::cout<<"delete"<<std::endl;
@@ -244,9 +247,9 @@ std::string TecosFileManager::getTextInput(int limit, std::string text) {
     uiDrawer->drawTextInput(textIn);
     do {
         charr = uart->GetChar();
+        std::cout<<std::dec<<(int)charr<<std::endl;
 
-
-        if((charr != 13 && charr != 127)
+        if((charr != 13 && charr != 127 && charr != 27)
            && textIn.size() <= limit - 1) {
             textIn += (char)charr;
            // textIn.append((char)charr);
@@ -260,9 +263,14 @@ std::string TecosFileManager::getTextInput(int limit, std::string text) {
 
         uiDrawer->drawTextInput(textIn);
 
-    } while (charr != 13);
+    } while (charr != 13 && charr != 27);
 
-    return textIn;
+    if(charr == 27) {
+        return "";
+    }else {
+        return textIn;
+    }
+
 }
 
 void TecosFileManager::setMaxCursorPosition() {

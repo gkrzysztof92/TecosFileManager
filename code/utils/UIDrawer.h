@@ -4,6 +4,7 @@
 #include <string>
 #include <map>
 #include <vector>
+#include <sstream>
 #include "CharDrawer.h"
 #include "../filesystem/Directory.h"
 #include "../filesystem/FileSystemItem.h"
